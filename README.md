@@ -21,7 +21,7 @@ Public artifacts use synthetic examples and bounded case studies.
 
 | Repository | What it shows |
 | --- | --- |
-| [ai-product-lab](https://github.com/guillaumevele/ai-product-lab) | Redacted AI product case studies, synthetic evaluation fixtures, repeatability checks, workflow safety gates and generated decision briefs. |
+| [ai-product-lab](https://github.com/guillaumevele/ai-product-lab) | Redacted AI product case studies, synthetic evaluation fixtures, repeatability checks, workflow safety gates and generated reviewer artifacts. |
 | [voxtral-tts-q8](https://github.com/guillaumevele/voxtral-tts-q8) | Q8_0 quantization exploration for Voxtral TTS, with WGSL GPU kernel work and upstreaming notes. |
 | [voxtral-mini-realtime-rs](https://github.com/guillaumevele/voxtral-mini-realtime-rs) | Rust/WebGPU exploration around Mistral Voxtral ASR/TTS runtime constraints. |
 | [TouchDesigner_Shared](https://github.com/guillaumevele/TouchDesigner_Shared) | Earlier interactive and generative design work. |
@@ -36,9 +36,10 @@ Public artifacts use synthetic examples and bounded case studies.
 
 ## Public Proof Points
 
-- `ai-product-lab`: runnable demos for repeatability scoring, workflow action gating, generated decision briefs and public safety scanning.
+- `ai-product-lab`: runnable demos for repeatability scoring, workflow action gating, generated reviewer artifacts and public safety scanning.
 - Proof pack: https://github.com/guillaumevele/ai-product-lab/blob/main/docs/public-proof-pack.md
 - Synthetic decision brief: https://github.com/guillaumevele/ai-product-lab/blob/main/docs/generated/synthetic-decision-brief.md
+- Public readiness scorecard: https://github.com/guillaumevele/ai-product-lab/blob/main/docs/generated/public-readiness-scorecard.md
 - `voxtral-tts-q8`: quantization and GPU-kernel work around Mistral Voxtral TTS.
 - Publication boundary: synthetic artifacts, no sensitive datasets, no production code.
 
