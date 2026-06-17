@@ -1,23 +1,21 @@
 # Guillaume Vele
 
-AI product builder working at the intersection of product design, evaluation,
-local automation and constrained-domain workflows.
+AI product builder focused on evaluation, workflow safety, local automation and
+product design for constrained-domain user experiences.
 
-I build and test AI-assisted product surfaces where the hard part is not only
-the model output, but also trust, privacy, uncertainty, refusal states and the
-quality of the user workflow around it.
+My public work shows runnable test harnesses, synthetic fixtures, workflow gates
+and redacted product reasoning. The goal is to make AI product judgment
+inspectable, not just describe it.
 
 ## What I Work On
 
 - AI product prototyping for medical-adjacent, legal and operational workflows.
 - Lightweight evaluation harnesses for model-assisted user experiences.
 - Local voice and automation loops on macOS.
-- Privacy-first product design for sensitive pre-release and client work.
+- Privacy-first product design for constrained workflows.
 - Visual design systems and premium digital experiences for medical brands.
 
-I keep private client work and pre-release products private. Public repositories
-show redacted methodology, synthetic examples, technical experiments and
-evaluation discipline without exposing proprietary code or sensitive datasets.
+Public artifacts use synthetic examples and bounded case studies.
 
 ## Public Work
 
@@ -34,19 +32,20 @@ evaluation discipline without exposing proprietary code or sensitive datasets.
 - UX: make uncertainty, retries, escalation and failure states feel clear.
 - Evaluation: define synthetic tests, acceptance criteria and release gates.
 - Implementation: build small prototypes, automation scripts and validation loops.
-- Redaction: publish enough to prove the work without leaking sensitive projects.
+- Redaction: publish enough to prove the method without exposing sensitive work.
 
 ## Public Proof Points
 
-- `ai-product-lab`: runnable demos for repeatability scoring and workflow action gating.
+- `ai-product-lab`: runnable demos for repeatability scoring, workflow action gating and public safety scanning.
+- Proof pack: https://github.com/guillaumevele/ai-product-lab/blob/main/docs/public-proof-pack.md
 - `voxtral-tts-q8`: quantization and GPU-kernel work around Mistral Voxtral TTS.
-- Public profile README: clear boundary between public artifacts and private pre-release work.
+- Publication boundary: synthetic artifacts, no sensitive datasets, no production code.
 
 ## Current Public Focus
 
 - Making AI product evaluation more concrete and inspectable.
-- Turning private product lessons into safe public artifacts.
-- Building a defensible public GitHub surface without exposing pre-release work.
+- Turning product lessons into safe public artifacts.
+- Building a defensible public GitHub surface with a clear publication boundary.
 
 ## Links
 
