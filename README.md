@@ -23,7 +23,7 @@ evaluation discipline without exposing proprietary code or sensitive datasets.
 
 | Repository | What it shows |
 | --- | --- |
-| [ai-product-lab](https://github.com/guillaumevele/ai-product-lab) | Redacted AI product case studies, synthetic evaluation fixtures and a small repeatability test harness. |
+| [ai-product-lab](https://github.com/guillaumevele/ai-product-lab) | Redacted AI product case studies, synthetic evaluation fixtures, repeatability checks and workflow safety gates. |
 | [voxtral-tts-q8](https://github.com/guillaumevele/voxtral-tts-q8) | Q8_0 quantization exploration for Voxtral TTS, with WGSL GPU kernel work and upstreaming notes. |
 | [voxtral-mini-realtime-rs](https://github.com/guillaumevele/voxtral-mini-realtime-rs) | Rust/WebGPU exploration around Mistral Voxtral ASR/TTS runtime constraints. |
 | [TouchDesigner_Shared](https://github.com/guillaumevele/TouchDesigner_Shared) | Earlier interactive and generative design work. |
@@ -36,6 +36,12 @@ evaluation discipline without exposing proprietary code or sensitive datasets.
 - Implementation: build small prototypes, automation scripts and validation loops.
 - Redaction: publish enough to prove the work without leaking sensitive projects.
 
+## Public Proof Points
+
+- `ai-product-lab`: runnable demos for repeatability scoring and workflow action gating.
+- `voxtral-tts-q8`: quantization and GPU-kernel work around Mistral Voxtral TTS.
+- Public profile README: clear boundary between public artifacts and private pre-release work.
+
 ## Current Public Focus
 
 - Making AI product evaluation more concrete and inspectable.
@@ -46,4 +52,3 @@ evaluation discipline without exposing proprietary code or sensitive datasets.
 
 - Website: https://www.guillaumevele.fr
 - Public lab: https://github.com/guillaumevele/ai-product-lab
-
