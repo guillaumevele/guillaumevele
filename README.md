@@ -1,62 +1,56 @@
 # Guillaume Vele
 
-AI product builder focused on evaluation, workflow safety, local automation and
-product design for constrained-domain user experiences.
+AI product builder. Co-founder and digital director at Nuance Paris.
+I ship products in constrained, sensitive domains — medical, legal, on-device — and I
+care about evaluation, workflow safety and product design as much as the model itself.
 
-My public work shows runnable test harnesses, synthetic fixtures, workflow gates
-and redacted product reasoning. The goal is to make evaluation habits
-inspectable, not just describe them.
+- Paris, France
+- Website: https://www.guillaumevele.fr
+- Power-user of the OpenClaw agent stack (not its creator — that is [@steipete](https://github.com/steipete))
 
-## What I Work On
+## Open-source contribution
 
-- AI product prototyping for sensitive consumer, document and operational workflows.
-- Lightweight evaluation harnesses for model-assisted user experiences.
-- Local voice and automation loops on macOS.
-- Privacy-first product design for constrained workflows.
-- Visual design systems and premium digital experiences for medical brands.
+[**TrevorS/voxtral-mini-realtime-rs#15**](https://github.com/TrevorS/voxtral-mini-realtime-rs/pull/15)
+— open pull request (in review) adding Q8_0 8-bit GPU quantization to a real-time
+Voxtral runtime: custom WGSL compute kernels, run on both Metal and Vulkan.
+The base runtime is by [@TrevorS](https://github.com/TrevorS); this PR proposes the
+quantization path on top of it.
 
-Public artifacts use synthetic examples and bounded case studies.
+## Products I work on
 
-## Public Work
+Most of my product work is private, but it ships:
 
-| Repository | What it shows |
+- **Verdict** — iOS skincare/dermatology app. On-device image analysis with a strong
+  bias toward scientific honesty (no overclaimed diagnoses, sourced reasoning).
+- **Compromis-AI** — real-estate/legal SaaS for French property pre-sale agreements.
+- **Nuance Paris** — medical brand and product work as co-founder.
+- Medical SEO sites and **Hermes**, a local macOS automation stack.
+
+These stay private by design. The repositories below are the public, inspectable
+slice of how I work.
+
+## Public repositories
+
+| Repository | What it is |
 | --- | --- |
-| [agent-proof-kit](https://github.com/guillaumevele/agent-proof-kit) | Reusable AI-agent release gates: JSON schemas, fail-closed policy checks, JSONL trace normalization, regression diffing, SARIF export, proof bundles, npm-pack smoke tests and a composite GitHub Action. |
-| [ai-product-lab](https://github.com/guillaumevele/ai-product-lab) | Redacted AI product case studies, synthetic evaluation fixtures, repeatability checks, workflow safety gates and generated reviewer artifacts. |
-| [voxtral-tts-q8](https://github.com/guillaumevele/voxtral-tts-q8) | Q8_0 quantization exploration for Voxtral TTS, with WGSL GPU kernel work and upstreaming notes. |
-| [voxtral-mini-realtime-rs](https://github.com/guillaumevele/voxtral-mini-realtime-rs) | Rust/WebGPU exploration around Mistral Voxtral ASR/TTS runtime constraints. |
-| [TouchDesigner_Shared](https://github.com/guillaumevele/TouchDesigner_Shared) | Earlier interactive and generative design work. |
+| [voxtral-tts-q8](https://github.com/guillaumevele/voxtral-tts-q8) | Q8_0 quantization and WGSL GPU-kernel work around Mistral Voxtral TTS (Apache-2.0, derived from [@TrevorS](https://github.com/TrevorS)'s runtime). |
+| [agent-proof-kit](https://github.com/guillaumevele/agent-proof-kit) | AI-agent release gates: JSON schemas, fail-closed policy checks, JSONL trace normalization, regression diffing and a composite GitHub Action. `npm run verify` runs the full gate set; CI is green. |
+| [ai-product-lab](https://github.com/guillaumevele/ai-product-lab) | Runnable evaluation harnesses, repeatability checks and workflow-safety gates, with bounded case studies. |
+| [voxtral-mini-realtime-rs](https://github.com/guillaumevele/voxtral-mini-realtime-rs) | Fork tracking the Voxtral PR above. |
 
-## How I Contribute
+## How I work
 
-- Product framing: turn a broad model capability into a narrow, usable workflow.
-- UX: make uncertainty, retries, escalation and failure states feel clear.
-- Evaluation: define synthetic tests, acceptance criteria and release gates.
-- Implementation: build small prototypes, automation scripts and validation loops.
-- Redaction: publish enough to prove the method without exposing sensitive work.
+- **Product framing** — turn a broad model capability into a narrow, usable workflow.
+- **UX** — make uncertainty, retries, escalation and failure states feel clear.
+- **Evaluation** — define acceptance criteria and release gates, and run them.
+- **Implementation** — small prototypes, automation scripts, validation loops.
 
-## Public Proof Points
-
-- `agent-proof-kit`: public CLI and GitHub Action for AI-agent proof reports, release gates, SARIF exports and repository safety scanning.
-- Agent proof report: https://github.com/guillaumevele/agent-proof-kit/blob/main/docs/generated/sample-agent-proof-report.md
-- Proof bundle: https://github.com/guillaumevele/agent-proof-kit/blob/main/docs/generated/proof-bundle.json
-- v0.2 release: https://github.com/guillaumevele/agent-proof-kit/releases/tag/v0.2.0
-- Verification path: `npm run verify` runs unit, schema, adapter, diff, SARIF, CLI, npm-pack, artifact freshness and leak-scan gates.
-- `ai-product-lab`: runnable demos for repeatability scoring, workflow action gating, generated reviewer artifacts and public safety scanning.
-- Proof pack: https://github.com/guillaumevele/ai-product-lab/blob/main/docs/public-proof-pack.md
-- Synthetic decision brief: https://github.com/guillaumevele/ai-product-lab/blob/main/docs/generated/synthetic-decision-brief.md
-- Public readiness scorecard: https://github.com/guillaumevele/ai-product-lab/blob/main/docs/generated/public-readiness-scorecard.md
-- `voxtral-tts-q8`: quantization and GPU-kernel work around Mistral Voxtral TTS.
-- Publication boundary: synthetic artifacts, no sensitive datasets, no production code.
-
-## Current Public Focus
-
-- Making AI product evaluation more concrete and inspectable.
-- Turning product lessons into safe public artifacts.
-- Building a defensible public GitHub surface with a clear publication boundary.
+`agent-proof-kit` and `ai-product-lab` are self-built tooling, designed and tested
+against fixtures rather than production traffic. The case studies are bounded so the
+method is visible without exposing client or product data.
 
 ## Links
 
-- Website: https://www.guillaumevele.fr
-- Agent proof kit: https://github.com/guillaumevele/agent-proof-kit
-- Public lab: https://github.com/guillaumevele/ai-product-lab
+- Website — https://www.guillaumevele.fr
+- Voxtral Q8_0 PR — https://github.com/TrevorS/voxtral-mini-realtime-rs/pull/15
+- agent-proof-kit — https://github.com/guillaumevele/agent-proof-kit/releases/latest
