@@ -21,6 +21,7 @@ Public artifacts use synthetic examples and bounded case studies.
 
 | Repository | What it shows |
 | --- | --- |
+| [agent-proof-kit](https://github.com/guillaumevele/agent-proof-kit) | Deterministic release gates for synthetic AI-agent runs: policy checks, high-risk action containment, evidence coverage, public-surface scanning and generated proof reports. |
 | [ai-product-lab](https://github.com/guillaumevele/ai-product-lab) | Redacted AI product case studies, synthetic evaluation fixtures, repeatability checks, workflow safety gates and generated reviewer artifacts. |
 | [voxtral-tts-q8](https://github.com/guillaumevele/voxtral-tts-q8) | Q8_0 quantization exploration for Voxtral TTS, with WGSL GPU kernel work and upstreaming notes. |
 | [voxtral-mini-realtime-rs](https://github.com/guillaumevele/voxtral-mini-realtime-rs) | Rust/WebGPU exploration around Mistral Voxtral ASR/TTS runtime constraints. |
@@ -36,6 +37,9 @@ Public artifacts use synthetic examples and bounded case studies.
 
 ## Public Proof Points
 
+- `agent-proof-kit`: public CLI for AI-agent proof reports, release gates and repository safety scanning.
+- Agent proof report: https://github.com/guillaumevele/agent-proof-kit/blob/main/docs/generated/sample-agent-proof-report.md
+- Verification path: `npm run verify` runs unit tests, CLI tests, leak scan and report freshness checks.
 - `ai-product-lab`: runnable demos for repeatability scoring, workflow action gating, generated reviewer artifacts and public safety scanning.
 - Proof pack: https://github.com/guillaumevele/ai-product-lab/blob/main/docs/public-proof-pack.md
 - Synthetic decision brief: https://github.com/guillaumevele/ai-product-lab/blob/main/docs/generated/synthetic-decision-brief.md
@@ -52,4 +56,5 @@ Public artifacts use synthetic examples and bounded case studies.
 ## Links
 
 - Website: https://www.guillaumevele.fr
+- Agent proof kit: https://github.com/guillaumevele/agent-proof-kit
 - Public lab: https://github.com/guillaumevele/ai-product-lab
