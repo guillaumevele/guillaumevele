@@ -13,7 +13,7 @@ verify mutations, cite supporting sources, and fail closed when evidence is insu
 | --- | --- |
 | [**agent-proof-kit**](https://github.com/guillaumevele/agent-proof-kit) | Deterministic release gates for AI-agent runs: policy checks, provenance, SARIF and signed proof bundles. The public suite runs on synthetic fixtures; production use is not claimed. |
 | [**vibe-fim**](https://github.com/guillaumevele/vibe-fim) | Uses Codestral fill-in-the-middle to constrain generation between caller-supplied anchors, then verifies that the prefix and suffix remain byte-identical. Its parse gate currently covers Python; other languages require their real toolchain. |
-| [**Voxtral Q8_0 contribution**](https://github.com/TrevorS/voxtral-mini-realtime-rs/pull/15) | Open upstream PR adding Q8_0 GPU quantization to a real-time Voxtral runtime, with custom WGSL kernels for Metal and Vulkan. It is open and has not yet received maintainer review. |
+| [**Voxtral Q8_0 contribution**](https://github.com/TrevorS/voxtral-mini-realtime-rs/pull/15) | Open upstream PR adding Q8_0 GPU quantization to a real-time Voxtral runtime, with custom WGSL kernels validated locally on Metal. Vulkan and full-model audio remain unverified; the PR has not yet received maintainer review. |
 | [**voice-to-vault**](https://github.com/guillaumevele/voice-to-vault) | A small, provider-agnostic router for voice and transcript captures: config-driven routing, atomic writes and idempotence. |
 | [**gesture-jellyfish**](https://github.com/guillaumevele/gesture-jellyfish) | An interactive Three.js artwork controlled by webcam gestures, with a mouse fallback and a public static demo. |
 
