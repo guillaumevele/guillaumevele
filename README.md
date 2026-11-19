@@ -43,4 +43,5 @@ product data is used as public evidence.
 ## Links
 
 - Website — https://www.guillaumevele.fr
+- LinkedIn — https://www.linkedin.com/in/guillaumevele
 - Voxtral Q8_0 PR — https://github.com/TrevorS/voxtral-mini-realtime-rs/pull/15
