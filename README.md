@@ -1,19 +1,26 @@
 # Guillaume Velé
 
-AI product builder. Co-founder and digital director at Nuance Paris.
+AI product builder, independent. Founder of [Acuence](https://acuence.app).
 I build **evidence-first AI systems**: workflows that preserve canonical inputs,
 verify mutations, cite supporting sources, and fail closed when evidence is insufficient.
 
 - Paris, France · https://www.guillaumevele.fr
 - Power-user of the OpenClaw agent stack (not its creator — that is [@steipete](https://github.com/steipete))
 
-## Selected public work
+## Built on Mistral
+
+| Project | Scope and current evidence |
+| --- | --- |
+| [**vibe-fim**](https://github.com/guillaumevele/vibe-fim) · [PyPI](https://pypi.org/project/vibe-fim/) | Uses Codestral fill-in-the-middle to constrain generation between caller-supplied anchors, then verifies that the prefix and suffix remain byte-identical. Its parse gate currently covers Python; other languages require their real toolchain. |
+| [**vibe-orchestra**](https://github.com/guillaumevele/vibe-orchestra) · [PyPI](https://pypi.org/project/vibe-orchestra/) | A model-and-specialist router for Mistral Vibe: it classifies a task and routes it to the matching Mistral model, specialist and tool. The routing is hand-written, not learned. |
+| [**Voxtral Q8_0 contribution**](https://github.com/TrevorS/voxtral-mini-realtime-rs/pull/15) | Open upstream PR adding Q8_0 GPU quantization to a real-time Voxtral runtime, with custom WGSL kernels validated locally on Metal. Vulkan and full-model audio remain unverified; the PR has not yet received maintainer review. |
+| [**vibe-ios-kit**](https://github.com/guillaumevele/vibe-ios-kit) | An iOS posture for Mistral Vibe: an `AGENTS.md` ruleset, an `ios` agent and a lint script for SwiftUI work. The Swift templates are type-checked locally against the iOS SDK; a full app build is not claimed. |
+
+## Other public work
 
 | Project | Scope and current evidence |
 | --- | --- |
 | [**agent-proof-kit**](https://github.com/guillaumevele/agent-proof-kit) | Deterministic release gates for AI-agent runs: policy checks, provenance, SARIF and signed proof bundles. The public suite runs on synthetic fixtures; production use is not claimed. |
-| [**vibe-fim**](https://github.com/guillaumevele/vibe-fim) | Uses Codestral fill-in-the-middle to constrain generation between caller-supplied anchors, then verifies that the prefix and suffix remain byte-identical. Its parse gate currently covers Python; other languages require their real toolchain. |
-| [**Voxtral Q8_0 contribution**](https://github.com/TrevorS/voxtral-mini-realtime-rs/pull/15) | Open upstream PR adding Q8_0 GPU quantization to a real-time Voxtral runtime, with custom WGSL kernels validated locally on Metal. Vulkan and full-model audio remain unverified; the PR has not yet received maintainer review. |
 | [**voice-to-vault**](https://github.com/guillaumevele/voice-to-vault) | A small, provider-agnostic router for voice and transcript captures: config-driven routing, atomic writes and idempotence. |
 | [**gesture-jellyfish**](https://github.com/guillaumevele/gesture-jellyfish) | An interactive Three.js artwork controlled by webcam gestures, with a mouse fallback and a public static demo. |
 
